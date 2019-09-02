@@ -1,0 +1,77 @@
+import React from 'react';
+import { Global, css } from '@emotion/core';
+import Helmet from 'react-helmet';
+import Header from './header';
+import Hero from './hero';
+import Footer from '../components/Footer';
+import useSiteMetadata from '../hooks/use-sitemetadata';
+
+const Layout = ({ children }) => {
+  const { title, description } = useSiteMetadata();
+  return (
+    <>
+      <Global
+        styles={css`
+          * {
+            box-sizing: border-box;
+            margin: 0;
+          }
+          /* * + * {
+            margin-top: 1rem;
+          } */
+          html,
+          body {
+            margin: 0;
+            color: #555;
+            font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+
+            font-size: 18px;
+            line-height: 1.4;
+
+            /* remove margin for the main div that Gatsby mounts into */
+            > div {
+              margin-top: 0px;
+            }
+
+            h1,
+            h2 {
+              text-align: center;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              color: #222;
+              line-height: 1.1;
+
+              + * {
+                margin-top: 0.5rem;
+              }
+              strong {
+                color: #222;
+              }
+
+              li {
+                margin-top: 0.25rem;
+              }
+            }
+          }
+        `}
+      />
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+      </Helmet>
+      <Header />
+      <Hero />
+      <main>{children}</main>
+      <Footer />
+    </>
+  );
+};
+
+export default Layout;
