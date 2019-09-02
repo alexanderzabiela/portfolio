@@ -20,6 +20,8 @@ const Skill = styled('div')`
   p {
     font-size: 13px;
     width: 240px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
 
   @media only screen and (min-width: 768px) {
