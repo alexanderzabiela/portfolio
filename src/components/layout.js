@@ -3,7 +3,7 @@ import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header';
 import Hero from './hero';
-import Footer from '.Footer';
+import Footer from './Footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 
 const Layout = ({ children }) => {
