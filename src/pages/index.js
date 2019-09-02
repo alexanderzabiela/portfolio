@@ -12,7 +12,7 @@ export default () => {
   return (
     <>
       <Layout>
-        <Section>
+        <Section id="skills">
           <SectionContainer>
             <SectionTitle color="#fed136">
               &lt;<span>what_I_do </span>/&gt;

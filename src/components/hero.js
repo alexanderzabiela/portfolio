@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/core';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import HeroText from './hero-text';
+import Button from './button';
 
 const ImageBackground = styled(BackgroundImage)`
   background-position: top 20% center;
@@ -28,6 +30,11 @@ const Hero = () => {
       }
     }
   `);
+
+  function scrollDown() {
+    window.location.href = '#skills';
+  }
+
   return (
     <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <HeroText>
@@ -35,9 +42,18 @@ const Hero = () => {
           Hello, I’m <span>Alex Zabiela</span>.
         </h1>
         <h1>I’m a full-stack web developer.</h1>
-        {/* <div>
-          <span>View my work &darr;</span>
-        </div> */}
+        <div>
+          <Button
+            onClick={scrollDown}
+            color="white"
+            border="1px solid white"
+            css={css`
+              margin-top: 20px;
+            `}
+          >
+            View my work &nbsp;&nbsp;&nbsp;&darr;
+          </Button>
+        </div>
       </HeroText>
     </ImageBackground>
   );

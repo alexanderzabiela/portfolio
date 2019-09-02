@@ -19,6 +19,9 @@ const Layout = ({ children }) => {
           /* * + * {
             margin-top: 1rem;
           } */
+          html {
+            scroll-behavior: smooth;
+          }
           html,
           body {
             margin: 0;

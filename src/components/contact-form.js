@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import styled from '@emotion/styled';
+import { css } from '@emotion/core';
+import Button from './button';
 
 const Container = styled('div')`
   width: 100%;
@@ -37,23 +39,36 @@ const TextArea = styled('textarea')`
   padding: 10px;
 
   @media only screen and (min-width: 768px) {
-    height: 89%;
+    height: 22.3vh;
   }
 `;
 
 class ContactForm extends Component {
   render() {
     return (
-      <Container>
-        <Section>
-          <TextBox placeholder="Your Name" type="text" />
-          <TextBox placeholder="Your Email" type="text" />
-          <TextBox placeholder="Subject" type="text" />
-        </Section>
-        <Section>
-          <TextArea placeholder="Your Message" />
-        </Section>
-      </Container>
+      <div>
+        <Container>
+          <Section>
+            <TextBox placeholder="Your Name" type="text" />
+            <TextBox placeholder="Your Email" type="text" />
+            <TextBox placeholder="Subject" type="text" />
+          </Section>
+          <Section>
+            <TextArea placeholder="Your Message" />
+            <Button
+              color="black"
+              border="1px solid black"
+              marginLeft="auto"
+              css={css`
+                margin-left: auto;
+                margin-top: 40px;
+              `}
+            >
+              Send Message &nbsp;&nbsp;&nbsp;&rarr;
+            </Button>
+          </Section>
+        </Container>
+      </div>
     );
   }
 }
