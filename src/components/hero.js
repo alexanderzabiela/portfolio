@@ -12,7 +12,7 @@ const ImageBackground = styled(BackgroundImage)`
     margin-top: 0;
   }
   @media only screen and (min-width: 768px) {
-    height: 84vh;
+    height: 89vh;
   }
 `;
 
