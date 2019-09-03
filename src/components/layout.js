@@ -60,6 +60,10 @@ const Layout = ({ children }) => {
               li {
                 margin-top: 0.25rem;
               }
+
+              button {
+                font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
+              }
             }
           }
         `}
