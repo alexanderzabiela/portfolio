@@ -7,10 +7,24 @@ import SectionTitle from '../components/section-title';
 import Skills from '../components/skills';
 import Projects from '../components/projects';
 import ContactForm from '../components/contact-form';
+import GoogleFontLoader from 'react-google-font-loader';
 
 export default () => {
   return (
     <>
+      <GoogleFontLoader
+        fonts={[
+          {
+            font: 'Roboto',
+            weights: [400, '400i'],
+          },
+          {
+            font: 'Roboto Mono',
+            weights: [400, 700],
+          },
+        ]}
+        subsets={['cyrillic-ext', 'greek']}
+      />
       <Layout>
         <Section id="skills">
           <SectionContainer>
