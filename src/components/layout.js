@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           html,
           body {
             margin: 0;
-            color: #555;
+            color: #666;
             font-family: Montserrat, Roboto, Helvetica, Arial, sans-serif;
 
             font-size: 18px;

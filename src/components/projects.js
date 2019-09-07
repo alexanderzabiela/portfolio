@@ -1,9 +1,13 @@
 import React from 'react';
 import styled from '@emotion/styled';
 import WebImage from '../../images/web-application-development.svg';
+import DebtSol from '../../images/debt-sol-logo.png';
 import Project from './project';
 import ProjectDetails from './project-details';
 import ProjectImage from './project-image';
+import Button from './button';
+import ProjectPreview from '../components/project-preview';
+import usePosts from '../hooks/use-posts';
 
 const Container = styled('div')`
   display: flex;
@@ -15,37 +19,15 @@ const Container = styled('div')`
   }
 `;
 
+const baseUrl = '../../images/';
+
 const Projects = () => {
+  const posts = usePosts();
   return (
     <Container>
-      <Project>
-        <ProjectDetails>
-          &lt;<span>Project_01 </span>/&gt;
-          <h2>Project Name 01</h2>
-        </ProjectDetails>
-        <ProjectImage src={WebImage} />
-      </Project>
-      <Project>
-        <ProjectDetails>
-          &lt;<span>Project_02 </span>/&gt;
-          <h2>Project Name 02</h2>
-        </ProjectDetails>
-        <ProjectImage src={WebImage} />
-      </Project>
-      <Project>
-        <ProjectDetails>
-          &lt;<span>Project_03 </span>/&gt;
-          <h2>Project Name 03</h2>
-        </ProjectDetails>
-        <ProjectImage src={WebImage} />
-      </Project>
-      <Project>
-        <ProjectDetails>
-          &lt;<span>Project_04 </span>/&gt;
-          <h2>Project Name 04</h2>
-        </ProjectDetails>
-        <ProjectImage src={WebImage} />
-      </Project>
+      {posts.map(post => (
+        <ProjectPreview key={post.slug} post={post} />
+      ))}
     </Container>
   );
 };

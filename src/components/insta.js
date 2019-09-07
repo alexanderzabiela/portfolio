@@ -26,7 +26,7 @@ const Insta = () => {
               display: block;
               margin: 0.5rem;
               max-width: calc(33% - 1rem);
-              width: 120px;
+              width: 150px;
               transition: 200ms box-shadow linear;
 
               :focus,

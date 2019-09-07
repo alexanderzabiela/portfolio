@@ -1,10 +1,16 @@
 import styled from '@emotion/styled';
 
 const ProjectDetails = styled('div')`
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: #fed136;
   color: #333333;
-  padding: 22px;
+  padding: 4%;
+
+  @media only screen and (min-width: 768px) {
+    width: 280px;
+  }
 
   span,
   p {

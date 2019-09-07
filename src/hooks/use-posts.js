@@ -6,16 +6,13 @@ const usePosts = () => {
       allMdx {
         nodes {
           frontmatter {
+            projectNumber
             title
             slug
             author
             image {
               sharp: childImageSharp {
-                fluid(
-                  maxWidth: 100
-                  maxHeight: 100
-                  duotone: { shadow: "#663399", highlight: "#ddbbff" }
-                ) {
+                fluid {
                   ...GatsbyImageSharpFluid_withWebp
                 }
               }
@@ -28,6 +25,7 @@ const usePosts = () => {
   `);
 
   return data.allMdx.nodes.map(post => ({
+    projectNumber: post.frontmatter.projectNumber,
     title: post.frontmatter.title,
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,

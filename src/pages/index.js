@@ -7,6 +7,7 @@ import SectionTitle from '../components/section-title';
 import Skills from '../components/skills';
 import Projects from '../components/projects';
 import ContactForm from '../components/contact-form';
+import GoogleFontLoader from 'react-google-font-loader';
 
 export default () => {
   return (
@@ -29,7 +30,7 @@ export default () => {
                 color: white;
               `}
             >
-              &lt;<span>projects </span>/&gt;
+              &lt;<span>latest_projects </span>/&gt;
             </SectionTitle>
             <Projects />
           </SectionContainer>
