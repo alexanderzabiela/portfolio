@@ -30,6 +30,7 @@ const usePosts = () => {
     author: post.frontmatter.author,
     slug: post.frontmatter.slug,
     image: post.frontmatter.image,
+    image2: post.frontmatter.image2,
     excerpt: post.excerpt,
   }));
 };

@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 const SectionTitle = styled('h2')`
   margin-bottom: 44px;
   color: #333333;
-  font-size: 28px;
+  font-size: 24px;
   span {
     color: ${props => props.color};
   }

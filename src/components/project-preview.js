@@ -12,13 +12,17 @@ const ProjectPreview = ({ post }) => (
     css={css`
       display: flex;
       flex-direction: row;
-      height: 150px;
-      margin-bottom: 30px;
       margin-left: auto;
       margin-right: auto;
+      width: 100%;
+      min-height: 150px;
       @media only screen and (min-width: 768px) {
         width: 49%;
-        height: 100%;
+        min-height: 200px;
+        margin-bottom: 30px;
+      }
+      :first-of-type {
+        margin-bottom: 30px;
       }
       span,
       p {
@@ -32,7 +36,11 @@ const ProjectPreview = ({ post }) => (
         font-weight: 500;
       }
       p {
-        font-size: 13px;
+        display: none;
+        @media only screen and (min-width: 500px) {
+          display: block;
+          font-size: 13px;
+        }
       }
       a {
         text-decoration: none;
@@ -58,11 +66,9 @@ const ProjectPreview = ({ post }) => (
       css={css`
         object-fit: cover;
         max-width: 100%;
-        width: 150px;
-        height: 150px;
+        width: 90%;
         @media only screen and (min-width: 768px) {
-          width: 280px;
-          height: 280px;
+          width: 50%;
         }
       `}
       alt={post.title}

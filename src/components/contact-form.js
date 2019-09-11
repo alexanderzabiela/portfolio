@@ -21,6 +21,7 @@ const Section = styled('div')`
   flex-direction: column;
   @media only screen and (min-width: 768px) {
     width: 50%;
+    height: 234px;
   }
 
   &:nth-of-type(1) {

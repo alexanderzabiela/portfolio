@@ -25,7 +25,7 @@ const Header = () => (
         src={logo}
         alt="Logo"
         css={css`
-          height: 70px;
+          height: 68px;
           @media only screen and (min-width: 768px) {
             height: 115px;
           }

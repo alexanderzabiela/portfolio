@@ -39,7 +39,7 @@ const Hero = () => {
     <ImageBackground Tag="section" fluid={image.sharp.fluid} fadeIn="soft">
       <HeroText>
         <h1>
-          Hello, I’m <span>Alex Zab</span>.
+          Hello, I’m <span>Alex Zabiela</span>.
         </h1>
         <h1>I’m a full-stack web developer.</h1>
         <div>

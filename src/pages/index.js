@@ -1,6 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
 import Layout from '../components/layout';
+import Hero from '../components/Hero';
 import Section from '../components/section';
 import SectionContainer from '../components/section-container';
 import SectionTitle from '../components/section-title';
@@ -13,6 +14,7 @@ export default () => {
   return (
     <>
       <Layout>
+        <Hero />
         <Section id="skills">
           <SectionContainer>
             <SectionTitle color="#fed136">

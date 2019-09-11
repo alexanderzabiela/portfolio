@@ -74,7 +74,6 @@ const Layout = ({ children }) => {
         <meta name="description" content={description} />
       </Helmet>
       <Header />
-      <Hero />
       <main>{children}</main>
       <Footer />
     </>

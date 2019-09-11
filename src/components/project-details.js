@@ -7,9 +7,10 @@ const ProjectDetails = styled('div')`
   background-color: #fed136;
   color: #333333;
   padding: 4%;
+  width: 100%;
 
   @media only screen and (min-width: 768px) {
-    width: 280px;
+    width: 50%;
   }
 
   span,
@@ -26,7 +27,7 @@ const ProjectDetails = styled('div')`
     color: black;
     font-weight: normal;
     text-align: left;
-    font-size: 20px;
+    font-size: 0.9rem;
   }
 `;
 
