@@ -8,7 +8,6 @@ import SectionTitle from '../components/section-title';
 import Skills from '../components/skills';
 import Projects from '../components/projects';
 import ContactForm from '../components/contact-form';
-import GoogleFontLoader from 'react-google-font-loader';
 
 export default () => {
   return (
@@ -37,7 +36,7 @@ export default () => {
             <Projects />
           </SectionContainer>
         </Section>
-        <Section color="#fed136">
+        <Section color="#fed136" id="contact">
           <SectionContainer>
             <SectionTitle color="white">
               &lt;<span>contact_me </span>/&gt;

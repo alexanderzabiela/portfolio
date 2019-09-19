@@ -1,24 +1,28 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
 import { css } from '@emotion/core';
 import Layout from '../components/layout';
-import ReadLink from '../components/read-link';
 import Section from '../components/section';
 import SectionContainer from '../components/section-container';
 import SectionTitle from '../components/section-title';
+import TwoCol from '../components/two-col';
 
 export const query = graphql`
   query($slug: String!) {
     mdx(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
         title
-        author
       }
       body
     }
   }
 `;
+
+const shortcodes = {
+  TwoCol,
+};
 
 const PostTemplate = ({ data: { mdx: post } }) => (
   <Layout>
@@ -32,8 +36,10 @@ const PostTemplate = ({ data: { mdx: post } }) => (
         >
           &lt;<span>{post.frontmatter.title} </span>/&gt;
         </SectionTitle>
-        <MDXRenderer>{post.body}</MDXRenderer>
-        <ReadLink to="/">&larr; back to all posts</ReadLink>
+        <MDXProvider components={shortcodes}>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </MDXProvider>
+        {/* <ReadLink to="/">&larr; back to all posts</ReadLink> */}
       </SectionContainer>
     </Section>
   </Layout>

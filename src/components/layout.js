@@ -2,7 +2,6 @@ import React from 'react';
 import { Global, css } from '@emotion/core';
 import Helmet from 'react-helmet';
 import Header from './header';
-import Hero from './hero';
 import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
 

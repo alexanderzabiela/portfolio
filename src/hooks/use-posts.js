@@ -9,7 +9,6 @@ const usePosts = () => {
             projectNumber
             title
             slug
-            author
             image {
               sharp: childImageSharp {
                 fluid {
@@ -27,7 +26,6 @@ const usePosts = () => {
   return data.allMdx.nodes.map(post => ({
     projectNumber: post.frontmatter.projectNumber,
     title: post.frontmatter.title,
-    author: post.frontmatter.author,
     slug: post.frontmatter.slug,
     image: post.frontmatter.image,
     image2: post.frontmatter.image2,

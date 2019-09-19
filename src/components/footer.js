@@ -6,7 +6,10 @@ import logo from '../../images/footer-logo.svg';
 
 const Container = styled('div')`
   margin-top: 46px;
-  display: flex;
+  display: none;
+  @media only screen and (min-width: 768px) {
+    display: flex;
+  }
   h4,
   p {
     font-size: 13px;
@@ -18,16 +21,16 @@ const Footer = () => {
     <footer
       css={css`
         background: white;
-        display: none;
+        /* display: none; */
         justify-content: space-between;
         padding: 0 calc((100vw - 1180px - 0.5rem) / 2);
         margin-bottom: -15px;
         width: 1180px;
-        padding-top: 40px;
-        padding-bottom: 74px;
         max-width: 100vw;
         @media only screen and (min-width: 768px) {
           margin-bottom: 0%;
+          padding-top: 40px;
+          padding-bottom: 74px;
           display: flex;
         }
       `}

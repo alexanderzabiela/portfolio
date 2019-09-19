@@ -1,9 +1,7 @@
 import React from 'react';
 import { css } from '@emotion/core';
-import styled from '@emotion/styled';
 import { Link } from 'gatsby';
 import Image from 'gatsby-image';
-import ReadLink from './read-link';
 import ProjectDetails from './project-details';
 import Button from './button';
 
