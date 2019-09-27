@@ -46,7 +46,7 @@ const Header = () => (
       `}
     >
       <NavLink
-        href="https://www.linkedin.com/in/alexander-zabiela-8ba318133"
+        href="https://www.linkedin.com/in/alex-zabiela-8ba318133/"
         activeClassName="current-page"
       >
         <img
