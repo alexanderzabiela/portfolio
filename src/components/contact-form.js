@@ -66,12 +66,31 @@ class ContactForm extends Component {
             <input type="hidden" name="bot-field" />
             <input type="hidden" name="form-name" value="contact" />
             <Section>
-              <TextBox placeholder="Your Name" type="text" />
-              <TextBox placeholder="Your Email" type="text" />
-              <TextBox placeholder="Subject" type="text" />
+              <TextBox
+                id="name"
+                name="name"
+                placeholder="Your Name"
+                type="text"
+              />
+              <TextBox
+                id="email"
+                name="email"
+                placeholder="Your Email"
+                type="text"
+              />
+              <TextBox
+                id="subject"
+                name="subject"
+                placeholder="Subject"
+                type="text"
+              />
             </Section>
             <Section>
-              <TextArea placeholder="Your Message" />
+              <TextArea
+                id="message"
+                name="message"
+                placeholder="Your Message"
+              />
               <Button
                 color="black"
                 border="1px solid black"
