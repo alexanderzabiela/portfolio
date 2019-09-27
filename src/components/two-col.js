@@ -45,6 +45,10 @@ const TwoCol = styled('div')`
   /* .gatsby-resp-image-wrapper:nth-of-type(2) {
     max-width: 650px !important;
   } */
+
+  a {
+    color: #fed136;
+  }
 `;
 
 export default TwoCol;

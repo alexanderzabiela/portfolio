@@ -13,6 +13,14 @@ const Container = styled('div')`
   @media only screen and (min-width: 768px) {
     flex-direction: row;
   }
+
+  form {
+    dispay: block;
+    @media only screen and (min-width: 768px) {
+      width: 100%;
+      display: flex;
+    }
+  }
 `;
 
 const Section = styled('div')`
@@ -49,25 +57,34 @@ class ContactForm extends Component {
     return (
       <div>
         <Container>
-          <Section>
-            <TextBox placeholder="Your Name" type="text" />
-            <TextBox placeholder="Your Email" type="text" />
-            <TextBox placeholder="Subject" type="text" />
-          </Section>
-          <Section>
-            <TextArea placeholder="Your Message" />
-            <Button
-              color="black"
-              border="1px solid black"
-              marginLeft="auto"
-              css={css`
-                margin-left: auto;
-                margin-top: 40px;
-              `}
-            >
-              Send Message &nbsp;&nbsp;&nbsp;&rarr;
-            </Button>
-          </Section>
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
+            <Section>
+              <TextBox placeholder="Your Name" type="text" />
+              <TextBox placeholder="Your Email" type="text" />
+              <TextBox placeholder="Subject" type="text" />
+            </Section>
+            <Section>
+              <TextArea placeholder="Your Message" />
+              <Button
+                color="black"
+                border="1px solid black"
+                marginLeft="auto"
+                css={css`
+                  margin-left: auto;
+                  margin-top: 40px;
+                `}
+              >
+                Send Message &nbsp;&nbsp;&nbsp;&rarr;
+              </Button>
+            </Section>
+          </form>
         </Container>
       </div>
     );
