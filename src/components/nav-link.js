@@ -1,7 +1,6 @@
 import styled from '@emotion/styled';
-import { Link } from 'gatsby';
 
-const NavLink = styled(Link)`
+const NavLink = styled('a')`
   color: #222;
   font-size: 1rem;
   font-weight: ${props => props.fontWeight || 'normal'};

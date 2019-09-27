@@ -20,7 +20,7 @@ const Header = () => (
       }
     `}
   >
-    <NavLink to="/" fontWeight="bold">
+    <NavLink href="/" fontWeight="bold">
       <img
         src={logo}
         alt="Logo"
@@ -45,7 +45,10 @@ const Header = () => (
         }
       `}
     >
-      <NavLink to="/" activeClassName="current-page">
+      <NavLink
+        href="https://www.linkedin.com/in/alexander-zabiela-8ba318133"
+        activeClassName="current-page"
+      >
         <img
           src={linkedIn}
           alt="LinkedIn"
@@ -58,7 +61,10 @@ const Header = () => (
           `}
         />
       </NavLink>
-      <NavLink to="/" activeClassName="current-page">
+      <NavLink
+        href="https://github.com/alexanderzabiela"
+        activeClassName="current-page"
+      >
         <img
           src={github}
           alt="Github"
@@ -71,7 +77,7 @@ const Header = () => (
           `}
         />
       </NavLink>
-      <NavLink to="/" activeClassName="current-page">
+      {/* <NavLink to="/" activeClassName="current-page">
         <img
           src={twitter}
           alt="Twitter"
@@ -83,8 +89,8 @@ const Header = () => (
             }
           `}
         />
-      </NavLink>
-      <NavLink to="/" activeClassName="current-page">
+      </NavLink> */}
+      {/* <NavLink to="/" activeClassName="current-page">
         <img
           src={email}
           alt="Email"
@@ -96,7 +102,7 @@ const Header = () => (
             }
           `}
         />
-      </NavLink>
+      </NavLink> */}
     </nav>
   </header>
 );

@@ -63,8 +63,8 @@ const Skills = () => {
           Database Design
         </span>
         <p>
-          Database architectures in MongoDB, MySQL or Parse Server, always
-          aiming for performance, scale and stability.
+          Database architectures in MongoDB or MySQL, always aiming for
+          performance, scale and stability.
         </p>
       </Skill>
       <Skill>
