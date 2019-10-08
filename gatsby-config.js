@@ -5,10 +5,6 @@ module.exports = {
       'A site we built together during a full-day Frontend Masters Gatsby Workshop',
   },
   plugins: [
-    'gatsby-plugin-emotion',
-    'gatsby-plugin-react-helmet',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
@@ -17,6 +13,10 @@ module.exports = {
         },
       },
     },
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-react-helmet',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
