@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
           body {
             margin: 0;
             color: #666;
-            font-family: Montserrat;
+            font-family: arial;
 
             font-size: 18px;
             line-height: 1.4;
@@ -61,7 +61,7 @@ const Layout = ({ children }) => {
               }
 
               button {
-                font-family: Montserrat;
+                font-family: arial;
               }
             }
           }

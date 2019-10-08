@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 const Button = styled('button')`
   background-color: unset;
   color: ${props => props.color};
-  font-family: Montserrat;
+  font-family: arial;
   font-size: 12px;
   padding: 7px;
   max-width: 165px;
