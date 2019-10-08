@@ -4,6 +4,7 @@ import Helmet from 'react-helmet';
 import Header from './header';
 import Footer from './footer';
 import useSiteMetadata from '../hooks/use-sitemetadata';
+import 'typeface-montserrat';
 
 const Layout = ({ children }) => {
   const { title, description } = useSiteMetadata();
