@@ -5,14 +5,6 @@ module.exports = {
       'A site we built together during a full-day Frontend Masters Gatsby Workshop',
   },
   plugins: [
-    // {
-    //   resolve: 'gatsby-plugin-web-font-loader',
-    //   options: {
-    //     google: {
-    //       families: ['Montserrat'],
-    //     },
-    //   },
-    // },
     'gatsby-plugin-emotion',
     'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
