@@ -4,8 +4,6 @@ import NavLink from './nav-link.js';
 import logo from '../../images/logo.svg';
 import linkedIn from '../../images/linked-in.svg';
 import github from '../../images/github.svg';
-import twitter from '../../images/twitter.svg';
-import email from '../../images/email.svg';
 
 const Header = () => (
   <header
