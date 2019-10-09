@@ -15,6 +15,7 @@ const Layout = ({ children }) => {
           * {
             box-sizing: border-box;
             margin: 0;
+            font-family: Montserrat;
           }
           /* * + * {
             margin-top: 1rem;
@@ -26,8 +27,6 @@ const Layout = ({ children }) => {
           body {
             margin: 0;
             color: #666;
-            font-family: Montserrat;
-
             font-size: 18px;
             line-height: 1.4;
 
@@ -59,10 +58,6 @@ const Layout = ({ children }) => {
 
               li {
                 margin-top: 0.25rem;
-              }
-
-              button {
-                font-family: Montserrat;
               }
             }
           }
