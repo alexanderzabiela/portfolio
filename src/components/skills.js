@@ -53,12 +53,12 @@ const Skills = () => {
         <span>Responsive Web Development</span>
         <p>
           Web apps and sites built with efficiency and speed for all screen
-          sizes.{' '}
+          sizes. See my Google PageSpeed Insights score{' '}
           <a
             target="_blank"
             href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.alexzabiela.com%2F&tab=desktop"
           >
-            See my Google PageSpeed Insights score.
+            here.
           </a>
         </p>
       </Skill>

@@ -66,7 +66,7 @@ const Footer = () => {
         >
           <h4>Contact</h4>
           <p>+44 (0)7802437454</p>
-          <p>enquiries@alexzabiela.co.uk</p>
+          <p>alexanderzabiela@gmail.com</p>
         </div>
       </Container>
       <div
