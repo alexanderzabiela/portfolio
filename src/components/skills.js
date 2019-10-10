@@ -43,6 +43,7 @@ const Skills = () => {
           the designs for this site{' '}
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://xd.adobe.com/spec/2b610272-d5f9-4fcb-5dc3-ebb3023a59f3-5d50/"
           >
             here.
@@ -57,6 +58,7 @@ const Skills = () => {
           sizes. See my Google PageSpeed Insights score{' '}
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.alexzabiela.com%2F&tab=desktop"
           >
             here.
@@ -68,7 +70,11 @@ const Skills = () => {
         <span>API Integration and Development</span>
         <p>
           REST and SOAP API integration. REST API development with Node.js.{' '}
-          <a target="_blank" href="https://fervent-kirch-2242fe.netlify.com/">
+          <a
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://fervent-kirch-2242fe.netlify.com/"
+          >
             here
           </a>{' '}
           is simple Pokédex app built with React and bundled with Parcel which
@@ -103,6 +109,7 @@ const Skills = () => {
           platforms such as Amazon AWS and{' '}
           <a
             target="_blank"
+            rel="noopener noreferrer"
             href="https://app.netlify.com/teams/alexanderzabiela/sites"
           >
             Netlify.

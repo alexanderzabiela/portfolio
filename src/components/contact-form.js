@@ -67,18 +67,21 @@ class ContactForm extends Component {
             <input type="hidden" name="form-name" value="contact" />
             <Section>
               <TextBox
+                required
                 id="name"
                 name="name"
                 placeholder="Your Name"
                 type="text"
               />
               <TextBox
+                required
                 id="email"
                 name="email"
                 placeholder="Your Email"
                 type="text"
               />
               <TextBox
+                required
                 id="subject"
                 name="subject"
                 placeholder="Subject"
@@ -87,6 +90,7 @@ class ContactForm extends Component {
             </Section>
             <Section>
               <TextArea
+                required
                 id="message"
                 name="message"
                 placeholder="Your Message"
