@@ -39,12 +39,13 @@ const Skills = () => {
         <SkillImage src={WebImage} />
         <span>Web Application Development</span>
         <p>
-          Fast, responsive and engaging apps that bring your ideas to life.{' '}
+          Fast, responsive and engaging apps that bring your ideas to life. See
+          the designs for this site{' '}
           <a
             target="_blank"
             href="https://xd.adobe.com/spec/2b610272-d5f9-4fcb-5dc3-ebb3023a59f3-5d50/"
           >
-            See the designs for this site.
+            here.
           </a>
         </p>
       </Skill>
@@ -66,12 +67,12 @@ const Skills = () => {
         <SkillImage src={APIImage} />
         <span>API Integration and Development</span>
         <p>
-          REST and SOAP API integration. REST API development with Node.js. Here
-          is simple{' '}
+          REST and SOAP API integration. REST API development with Node.js.{' '}
           <a target="_blank" href="https://fervent-kirch-2242fe.netlify.com/">
-            Pokedex
+            here
           </a>{' '}
-          which interacts with the RESTful PokéAPI.
+          is simple Pokédex app built with React and bundled with Parcel which
+          interacts with the RESTful PokéAPI.
         </p>
       </Skill>
       <Skill>
@@ -99,7 +100,10 @@ const Skills = () => {
         </span>
         <p>
           Deployment of NodeJS apps, ReactJS apps and databases to leading cloud
-          platforms such as Amazon AWS and Netlify.
+          platforms such as Amazon AWS and{' '}
+          <a href="https://app.netlify.com/teams/alexanderzabiela/sites">
+            Netlify.
+          </a>
         </p>
       </Skill>
       <Skill>
