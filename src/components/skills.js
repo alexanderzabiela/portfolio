@@ -101,7 +101,10 @@ const Skills = () => {
         <p>
           Deployment of NodeJS apps, ReactJS apps and databases to leading cloud
           platforms such as Amazon AWS and{' '}
-          <a href="https://app.netlify.com/teams/alexanderzabiela/sites">
+          <a
+            target="_blank"
+            href="https://app.netlify.com/teams/alexanderzabiela/sites"
+          >
             Netlify.
           </a>
         </p>
