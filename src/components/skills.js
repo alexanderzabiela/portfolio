@@ -20,6 +20,9 @@ const Container = styled('div')`
   p {
     color: #333333;
   }
+  a {
+    color: #fed136;
+  }
 `;
 
 const SkillImage = styled('img')`
@@ -35,22 +38,40 @@ const Skills = () => {
       <Skill>
         <SkillImage src={WebImage} />
         <span>Web Application Development</span>
-        <p>Fast, responsive and engaging apps that bring your ideas to life.</p>
+        <p>
+          Fast, responsive and engaging apps that bring your ideas to life.{' '}
+          <a
+            target="_blank"
+            href="https://xd.adobe.com/spec/2b610272-d5f9-4fcb-5dc3-ebb3023a59f3-5d50/"
+          >
+            See the designs for this site.
+          </a>
+        </p>
       </Skill>
       <Skill>
         <SkillImage src={MobileImage} />
-        <span>Mobile Application Development</span>
+        <span>Responsive Web Development</span>
         <p>
-          Cross-platform apps built with efficiency and speed for Android and
-          iOS at once.
+          Web apps and sites built with efficiency and speed for all screen
+          sizes.{' '}
+          <a
+            target="_blank"
+            href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwww.alexzabiela.com%2F&tab=desktop"
+          >
+            See my Google PageSpeed Insights score.
+          </a>
         </p>
       </Skill>
       <Skill>
         <SkillImage src={APIImage} />
         <span>API Integration and Development</span>
         <p>
-          REST and SOAP API integration. REST API development with Node.js and
-          Loopback.
+          REST and SOAP API integration. REST API development with Node.js. Here
+          is simple{' '}
+          <a target="_blank" href="https://fervent-kirch-2242fe.netlify.com/">
+            Pokedex
+          </a>{' '}
+          which interacts with the RESTful PokéAPI.
         </p>
       </Skill>
       <Skill>
@@ -78,7 +99,7 @@ const Skills = () => {
         </span>
         <p>
           Deployment of NodeJS apps, ReactJS apps and databases to leading cloud
-          platforms such as Heroku and Amazon AWS.
+          platforms such as Amazon AWS and Netlify.
         </p>
       </Skill>
       <Skill>
